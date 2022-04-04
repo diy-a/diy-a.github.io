@@ -2,8 +2,8 @@
 
 Diyanah
 * Initial work - [diy-a.github.io](github.com/diy-a/diy-a.github.io/) (Repository space)
-* This site is hoted on [GitHub Pages](https://diy-a.github.io/).
-* My professional profile on [LinkedIn](https://www.linkedin.com/in/diyanah-afendy/)
+* This site is hosted on [GitHub Pages](https://diy-a.github.io/).
+* My professional profile can be foound on [LinkedIn](https://www.linkedin.com/in/diyanah-afendy/)
 
 ## Showcase
 This project was designed to demonstrate:
