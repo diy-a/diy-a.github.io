@@ -15,6 +15,11 @@ li {
     list-style-type: none;
 }
 
+p {
+    line-height: 1.5;
+    font-size: 16px;
+}
+
 a {
     text-decoration: none;
     position: relative;
@@ -46,7 +51,7 @@ section {
     width: 100%;
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 12px;
+    padding: 0 30px;
 }
 
 .section__title {
@@ -54,6 +59,7 @@ section {
     font-size: 40px;
     margin-bottom: 60px;
     margin-top: 60x;
+    z-index: 100;
 }
 
 .click {
@@ -193,7 +199,7 @@ nav,
     transform: translate(-50%, -50%);
     width: 100%;
     max-width: 1000px;
-    padding: 0 30;
+    padding: 0 30px;
 }
 
 .header__para {
@@ -283,7 +289,7 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
     height: 100px;
-    pad: 0 20px;
+    padding: 0 30px;
 }
 
 #personal-logo {
@@ -573,8 +579,18 @@ nav {
 */
 .project {
     margin-bottom: 135px;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
 
+.project__list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
 
 .project__img {
     width: 100%;
@@ -601,10 +617,10 @@ nav {
 .project__description {
     position: absolute;
     top: 50%;
-    left: 90px;
+    left: 45px;
     transform: translateY(100%);
     color: white;
-    max-width: 550px;
+    max-width: 80%;
     opacity: 0;
     transition: opacity 300ms, transform 450ms ease;
 }
@@ -625,21 +641,22 @@ nav {
 }
 
 .project__description--title {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .project__description--sub-title {
-    margin-top: 8px;
+    margin-top: 6px;
 }
 
 .project__description--link {
     color: white;
-    font-size: 20px;
+    font-size:16px;
     margin-right: 16px;
 }
 
 .project__description--para {
-    margin: 16px 0;
+    font-size: 14px;
+    margin: 20px 0;
 }
 
 /* 
@@ -649,7 +666,7 @@ footer {
     position: relative;
     background-color: #242424;
     display: flex;
-    padding: 6% 0;
+    padding: 3% 0;
 }
 
 .footer__row {
@@ -700,12 +717,17 @@ a:visited .footer__logo--popper{
     color: white;
 }
 
+.footer__copyright{
+    font-size:x-small;
+}
 /*
     SHAPES
 */
 
 .shape {
     position: fixed;
+    opacity: 0.3;
+    float: right;
 }
 
 .shape--0 {
@@ -773,14 +795,16 @@ a:visited .footer__logo--popper{
         flex-direction: column-reverse;
     }
 
-    .project__description--para {
-        display: none;
+    .project {
+        width: 100%;
     }
+
     .project__description{
-        left: 0;
+        left: 80px;
         padding: 0;
         width: 100%;
         text-align: center;
+        max-width: 550px;
     }
 
     .modal__half {
@@ -800,12 +824,32 @@ a:visited .footer__logo--popper{
     .header__para{
         font-size: 18px;
     }
+
+    .title, .header__para{
+        text-align: center;
+    }
+
+    .social__list {
+        justify-content: center;
+    }
+    
     .nav__link:first-child {
         display: none;
+    }    
+
+    .project {
+        margin-bottom: 80px;
     }
+
     .project__description--para {
         display: none;
     }
+
+    .project__list{
+        justify-content: center;
+        align-items: center;
+    }
+
     .project__description{
         left: 0;
         padding: 0;
