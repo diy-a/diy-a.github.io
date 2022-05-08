@@ -2,10 +2,12 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diyanah Afendy</title>
+
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/3a6cfb4580.js" crossorigin="anonymous"></script>
     <script src="app.js"></script>
@@ -15,16 +17,20 @@
             emailjs.init("oDcLYXFuLFiG5w36l");
         })();
     </script>
+
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+
 </head>
 
 <body>
 
     <section id="landing-page" onmousemove="moveBackground(event)">
         <nav>
+
             <figure>
                 <img id="personal-logo" src="./assets/logo.svg" alt="">
             </figure>
+
             <ul class="nav__link--list">
 
                 <li class="nav__link">
@@ -56,12 +62,13 @@
         </nav>
 
         <header class="header">
+
             <div class="header__content">
                 <h1 class="title">Hey</h1>
                 <h1 class="title secondary">I'm Diyanah</h1>
-                <p class="header__para">I'm a <b class="secondary"> Frontend Software Engineer</b> with a strong passion
-                    for building web applications with unique user experiences.
-                    <br>Here's a bit more <a href="#" class="secondary click" onclick="toggleModal()">about me.</a>
+                <p class="header__para">I'm an aspiring <b class="secondary"> Frontend Software Engineer</b> with a strong passion for
+                     building meaningful web applications that make an impact.
+                    <br><a href="#" class="secondary click" onclick="toggleModal()">Find out more about me.</a>
                 </p>
 
                 <div class="social__list">
@@ -69,26 +76,32 @@
                             class="fa-brands fa-linkedin-in"></i> </a>
                     <a href="https://github.com/diy-a" target="_blank" class="social__link click"> <i
                             class="fa-brands fa-github"></i> </a>
-                    <a href="" class="social__link click" target="_blank"> <i class="fa-solid fa-file-pdf"></i> </a>
+                    <a href="./assets/DiyanahA_Resume.pdf" target="_blank" class="social__link click"> <i class="fa-solid fa-file-pdf"></i> </a>
 
                 </div>
             </div>
         </header>
+
         <a href="#">
             <button class="mail__btn click" onclick="toggleModal()">
                 <i class="fa-solid fa-envelope"></i>
             </button>
         </a>
+
         <a href="#languages" class="scroll">
             <div class="scroll__icon click"></div>
         </a>
+
         <div class="modal">
             <div class="modal__half modal__about">
+
                 <figure class="about-me__picture--mask">
                     <img src="./assets/me.jpeg" class="about-me__picture" alt="Picture of me!">
                 </figure>
+
                 <h3 class="modal__title modal__title--about">Hello there! I'm Diyanah Afendy <span
                         class="shake">👋</span></h3>
+
                 <p class="modal__para">
                     I'm a Marketing Professional (6+ years of experience) turned Frontend Software Engineer. I enjoy
                     applying
@@ -98,50 +111,18 @@
                     Science (Software Engineering) at the University of Wollongong, expecting to <b
                         class="secondary">graduate by November 2023.</b>
                 </p>
-                <!-- <div class="modal__languages">
-                    <figure class="modal__language">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
-                            class="modal__language--img">
-                        <span class="language__name">HTML</span>
-                    </figure>
-                    <figure class="modal__language">
-                        <img src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="CSS Logo"
-                            class="modal__language--img">
-                        <span class="language__name">CSS</span>
-                    </figure>
-                    <figure class="modal__language">
-                        <img src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
-                            class="modal__language--img">
-                        <span class="language__name">JavaScript</span>
-                    </figure>
-                    <figure class="modal__language">
-                        <img src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png" alt="React Logo"
-                            class="modal__language--img">
-                        <span class="language__name">React</span>
-                    </figure>
-                    <figure class="modal__language">
-                        <img src="./assets/java.svg" class="modal__language--img">
-                        <span class="language__name">Java</span>
-                    </figure>
-                    <figure class="modal__language">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg"
-                            alt="TypeScript Logo" class="modal__language--img">
-                        <span class="language__name">TypeScript</span>
-                    </figure>
-                    <figure class="modal__language">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma Logo"
-                            class="modal__language--img">
-                        <span class="language__name">Figma</span>
-                    </figure>
-                </div> -->
+
             </div>
 
             <div class="modal__half modal__contact">
                 <i class="fa-solid fa-xmark modal__exit click" onclick="toggleModal()"></i>
+
                 <h3 class="modal__title modal__title--contact">
                     Let's have a chat!
                 </h3>
+
                 <h3 class="modal__sub-title modal__sub-title--contact">I'm currently open to new opportunities.</h3>
+                
                 <form action="" id="contact__form" onsubmit="contact(event)">
                     <div class="form__item">
                         <label class="form__item--label">Name</label>
@@ -370,22 +351,25 @@
                     </span>
                 </a>
                 <div class="footer__social--list">
-                    <a href="http://" class="
+                    <a href="https://github.com/diy-a" target="_blank" class="
                 footer__social--link
                 link__hover-effect
                 link__hover-effect--white
                 ">GitHub</a>
-                    <a href="http://" class="
+                    
+                <a href="https://www.linkedin.com/in/diyanah-afendy/"  target="_blank" class="
                 footer__social--link
                 link__hover-effect
                 link__hover-effect--white
                 ">LinkedIn</a>
-                    <a href="#" onclick="toggleModal()" class="
+                    
+                <a href="#" onclick="toggleModal()" class="
                 footer__social--link
                 link__hover-effect
                 link__hover-effect--white
                 ">Contact</a>
-                    <a href="http://" class="
+                   
+                <a href="./assets/DiyanahA_Resume.pdf" target="_blank" class="
                 footer__social--link
                 link__hover-effect
                 link__hover-effect--white

@@ -151,6 +151,10 @@ nav,
     transition: all 400ms;
 }
 
+/*
+    DARK THEME
+*/
+
 .dark-theme .title,
 .dark-theme .section__title,
 .dark-theme .section__sub-title,
@@ -205,7 +209,7 @@ nav,
 .header__para {
     font-size: 24px;
     line-height: 1.7;
-    max-width: 450px;
+    max-width: 500px;
 }
 
 .social__list {
